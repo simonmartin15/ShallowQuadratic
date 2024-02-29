@@ -16,6 +16,9 @@ plt.rcParams["text.usetex"] = False
 def main():
     """Plots high dimensional limit for the function phi in the orthonormal case"""
 
+    print('')
+    print('Figure 2')
+
     seed = 0
     rep = 5
     nstep = 10
@@ -24,7 +27,6 @@ def main():
     args = (True, True, False, True)
 
     print('Simulating (Finite Dimension)')
-    print('')
     print('m > m*')
     m1 = [10, 20, 40, 100]
     ms1 = [5, 10, 20, 50]
@@ -32,7 +34,6 @@ def main():
         Sim1 = md.Simulator(d, ms1, m1, rep, args, seed, eta)
         Sim1.simulate_GD(nstep)
 
-    print('')
     print('m = m*')
     m2 = [10, 20, 40, 100]
     ms2 = [10, 20, 40, 100]
@@ -40,7 +41,6 @@ def main():
         Sim2 = md.Simulator(d, ms2, m2, rep, args, seed, eta)
         Sim2.simulate_GD(nstep)
 
-    print('')
     print('m < m*')
     m3 = [5, 10, 20, 50]
     ms3 = [10, 20, 40, 100]
@@ -48,7 +48,6 @@ def main():
         Sim3 = md.Simulator(d, ms3, m3, rep, args, seed, eta)
         Sim3.simulate_GD(nstep)
 
-    print('')
     print('Simulating (Infinite Dimension)')
     alpha = [0.5, 0.5, 0.25]
     alphastar = [0.25, 0.5, 0.5]
@@ -63,9 +62,6 @@ def main():
         steps_inf.append(Sim_inf.steps)
         Phi_inf.append(Sim_inf.Phi)
         Over_inf.append(Sim_inf.overlap)
-        print('')
-
-    print('Plotting Figure 2')
     
     Phi1 = []
     Phi2 = []
@@ -143,8 +139,8 @@ def main():
     plt.savefig('Figures/Figure2.pdf', format='pdf')
 
 
-
-    print('Plotting Figure 3')
+    print('')
+    print('Figure 3')
 
     # Overlap
     fig = plt.figure(figsize=(7, 10))
