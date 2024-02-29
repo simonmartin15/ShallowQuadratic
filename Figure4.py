@@ -127,7 +127,7 @@ def main():
     plt.ylabel(r'$\phi_d(\gamma)$', rotation=0, labelpad=27)
 
     plt.tight_layout()
-    plt.savefig('Figures/Figure4.pdf', format='pdf')
+    plt.savefig('Figure4.pdf', format='pdf')
 
 
 if __name__ == '__main__':
