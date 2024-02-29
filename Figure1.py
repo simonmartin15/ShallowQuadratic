@@ -46,6 +46,9 @@ def main():
     eig = sample_eigenvalues(alpha, alphastar, d=2000)
     counts, bins = np.histogram(eig, bins=30)
 
+    print('')
+    print('Figure 1')
+
     figure = plt.figure(figsize=(8, 4))
 
     plt.plot(x, y, color='black', linewidth=2, linestyle='dashed', label=r'$d = \infty$')
