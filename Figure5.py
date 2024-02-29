@@ -94,7 +94,7 @@ def main():
     plt.ylabel(r'$\mathcal{L}(t)$', rotation=0, labelpad=20)
 
     plt.tight_layout()
-    plt.savefig('Figures/Figure5.pdf', format='pdf')
+    plt.savefig('Figure5.pdf', format='pdf')
 
 
 if __name__ == '__main__':
