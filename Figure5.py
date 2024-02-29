@@ -16,6 +16,9 @@ plt.rcParams["text.usetex"] = True
 def main():
     """Plots renormalized non-exponential convergence rates for the flow"""
 
+    print('')
+    print('Figure 5')
+
     seed = 0
     rep = 5
     nstep = 12500
@@ -30,7 +33,6 @@ def main():
         Sim1 = md.Simulator(d, ms1, m, rep, args1, seed, eta)
         Sim1.simulate_GD(nstep)
 
-    print('')
     print('Simulating m = m*')
     ms2 = [10, 20, 50]
     args2 = (False, False, False, False)
@@ -38,8 +40,7 @@ def main():
         Sim2 = md.Simulator(d, ms2, m, rep, args2, seed, eta)
         Sim2.simulate_GD(nstep)
 
-    print('')
-    print('Plotting Figure 5')
+
     Loss1 = []
     Loss2 = []
 
