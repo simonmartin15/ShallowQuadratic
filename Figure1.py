@@ -60,7 +60,7 @@ def main():
     plt.xlim(0.02, 0.98)
     plt.ylim(0, 1.7)
     plt.tight_layout()
-    figure.savefig('Figures/Figure1.pdf', format='pdf')
+    figure.savefig('Figure1.pdf', format='pdf')
 
 
 if __name__ == '__main__':
