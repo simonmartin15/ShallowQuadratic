@@ -12,12 +12,15 @@ plt.rcParams["text.usetex"] = True
 
 
 def main():
-    end = 4
-    eta = 5e-5
+    end = 3
+    eta = 2e-5
     a = np.array([0.5, 0.5, 0.25])
     astar = np.array([0.25, 0.5, 0.5])
 
     lims = np.minimum(1, np.sqrt(a/astar))
+
+    print('')
+    print('Figure 6')
 
     Y = []
     overlap = []
@@ -28,9 +31,7 @@ def main():
         Sim.optimize(end, eta)
         Y.append(Sim.steps)
         overlap.append(Sim.overlap)
-
-    print('')
-    print('Plotting Figure 6')
+        
 
     labels = [r'$\alpha > \alpha^*$', r'$\alpha = \alpha^*$', r'$\alpha < \alpha^*$']
     colors = ['tab:orange', 'tab:red', 'tab:green']
@@ -51,8 +52,8 @@ def main():
     plt.grid('both')
     plt.legend()
     plt.yscale('log')
-    plt.xlim(0, 3.5)
-    plt.ylim(1e-9, 5)
+    plt.xlim(0, 3)
+    plt.ylim(1e-7, 5)
     plt.ylabel(r'$\delta(\gamma)$', rotation=0, labelpad=20)
     plt.xlabel(r'$\gamma$', labelpad=5)
 
