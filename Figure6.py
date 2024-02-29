@@ -58,7 +58,7 @@ def main():
     plt.xlabel(r'$\gamma$', labelpad=5)
 
     plt.tight_layout()
-    plt.savefig('Figures/Figure6.pdf', format='pdf')
+    plt.savefig('Figure6.pdf', format='pdf')
 
 
 if __name__ == '__main__':
