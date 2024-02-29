@@ -3,7 +3,7 @@ Required packages:
 - numpy
 - pytorch
 
-Figures 2, 3, 4, 5 use pytorch to optimize the model. The default device is CUDA, otherwise CPU. This can be changed in Model.py, L24.
+Figures 2, 3, 4, 5 use pytorch to optimize the model. The default device is CUDA, otherwise CPU. This can be changed in Model.py, L22.
 
 
 To plot all the figures, execute: 
