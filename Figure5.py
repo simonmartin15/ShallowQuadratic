@@ -10,8 +10,6 @@ plt.rc('xtick', labelsize=17)
 plt.rc('ytick', labelsize=17)
 plt.rc('axes', unicode_minus=False)
 plt.rc('legend', fontsize=17)
-plt.rcParams["text.usetex"] = True
-
 
 def main():
     """Plots renormalized non-exponential convergence rates for the flow"""
