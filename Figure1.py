@@ -9,8 +9,6 @@ plt.rc('xtick', labelsize=17)
 plt.rc('ytick', labelsize=17)
 plt.rc('axes', unicode_minus=False)
 plt.rc('legend', fontsize=17)
-plt.rcParams["text.usetex"] = True
-
 
 def pdf(r1, r2, x):
     """Probability density function associated with the measure mu"""
