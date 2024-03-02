@@ -10,6 +10,7 @@ plt.rc('axes', unicode_minus=False)
 plt.rc('legend', fontsize=17)
 
 def main():
+    """Plots the convergence rate for the overlap in the high-dimensional limit"""
     end = 3
     eta = 2e-5
     a = np.array([0.5, 0.5, 0.25])
